@@ -68,7 +68,7 @@ module.exports = (DISCORD, client, rolesConfig) => {
                 const data = usersRolesMap.get(interaction.user.tag);
                 data.forEach(dataSelected => {
                     if(interaction.customId.split('-')[1] === dataSelected.menuId.split('-')[2]) {
-                        arrayCounter = {
+                        var arrayCounter = {
                             eneable: true,
                             counter: 0
                         };
